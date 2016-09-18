@@ -11,10 +11,9 @@
     NSString *adURL = @"http://tieba.baidu.com/";
     
     //1、创建广告
-    ADView *adView = [[ADView alloc] initWithFrame:[UIApplication sharedApplication].keyWindow.bounds andImgUrl:imageUrl andADUrl:adURL andClickBlock:^(NSString *clikImgUrl) {
-        
+    ADView *adView = [[ADView alloc] initWithFrame:[UIApplication sharedApplication].keyWindow.bounds imgUrl:image adUrl:ad clickImg:^(NSString *clikImgUrl) {
         NSLog(@"进入广告:%@",clikImgUrl);
     }];
-    
     //2、显示广告
     [adView show];
+
