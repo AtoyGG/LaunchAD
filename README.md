@@ -7,8 +7,8 @@
 使用方法：
 在使用的地方导入头文件ADView.h之后，添加如下代码
 
-    NSString *imageUrl = @"http://img5q.duitang.com/uploads/item/201505/25/20150525223238_NdQrh.thumb.700_0.png";
-    NSString *adURL = @"http://tieba.baidu.com/";
+    NSString *image = @"http://img5q.duitang.com/uploads/item/201505/25/20150525223238_NdQrh.thumb.700_0.png";
+    NSString *ad = @"http://tieba.baidu.com/";
     
     //1、创建广告
     ADView *adView = [[ADView alloc] initWithFrame:[UIApplication sharedApplication].keyWindow.bounds imgUrl:image adUrl:ad clickImg:^(NSString *clikImgUrl) {
